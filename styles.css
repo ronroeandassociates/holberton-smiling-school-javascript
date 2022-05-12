@@ -82,7 +82,7 @@ header a:hover {
   top: 0.4rem;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 768px) {
   header {
     background-position: 50% 50%;
   }
@@ -200,4 +200,24 @@ img.circle-thumb-small {
 .search-filter {
   background-color: #d195ff;
   border-radius: 3px;
+}
+
+/*** my loader */
+.loader {
+  border: 10px solid #f3f3f3;
+  border-top: 10px solid #c271ff;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 2s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

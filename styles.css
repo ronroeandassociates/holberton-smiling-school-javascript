@@ -1,223 +1,296 @@
-/*** Header first
-    ------------------------------------------ ***/
-* {
+body {
   font-family: "Source Sans Pro" !important;
 }
-header {
+
+.homepage-header {
   background-image: url("images/pic_1.jpg");
-  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.logo {
-  width: auto;
-  height: 30px;
+.pricing-header {
+  background-image: url("images/pic_2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.nav-item {
-  font-size: 12px !important;
+.course-header {
+  background-image: url("images/pic_3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-header a:hover {
-  text-decoration: none;
-  border-bottom: 1px solid white;
-  color: #c371ff !important;
+a {
+  color: white !important;
+  font-weight: bolder;
+  font-size: 0.6rem;
+}
+
+a:hover {
+  color: #c271ff !important;
+}
+
+.form-control::placeholder {
+  color: white;
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+}
+
+.navbar-toggler {
+  width: 55px;
+  height: 45px;
+  background: none;
+  border: 3px solid rgb(187, 126, 12) !important;
+}
+
+.navbar-toggler .line {
+  width: 100%;
+  float: left;
+  height: 2px;
+  background: white;
+  margin: 3px 0 3px;
+}
+
+.navbar-toggler .line2 {
+  width: 70%;
+}
+
+.dropdown-item {
+  color: black !important;
 }
 
 .btn {
   background-color: #c271ff !important;
-  border-color: #c271ff !important;
-  font-size: 14px;
+  font-size: 0.7rem;
+}
+
+.bg-btn {
+  opacity: 0.6;
+  background-color: #8519d84f !important;
 }
 
 .btn:hover,
 .btn:active {
-  background-color: #c271ff !important;
-  border-color: #c271ff !important;
+  color: white !important;
+  font-weight: bolder;
   opacity: 0.9;
 }
 
-.users-section {
-  margin-top: 8rem;
-}
-
-.text-violet {
-  color: #c271ff;
-}
-
-.users {
-  margin: 5rem 0;
-}
-
-.users img {
-  width: 75% !important;
-  height: auto;
-}
-
-#nav-menu-btn {
-  background-color: white;
-  width: 13px;
-  height: 2px;
-  position: absolute;
-  top: 3rem;
-}
-
-#nav-menu-btn::before {
-  content: "";
-  display: block;
-  width: 20px;
-  height: 2px;
-  background-color: white;
-  position: relative;
-  top: -0.5rem;
-}
-
-#nav-menu-btn::after {
-  content: "";
-  display: block;
-  width: 18px;
-  height: 2px;
-  background-color: white;
-  position: relative;
-  top: 0.4rem;
-}
-
-@media (max-width: 768px) {
-  header {
-    background-position: 50% 50%;
-  }
-
-  .users img {
-    width: 75% !important;
-    height: auto;
-  }
-}
-
-@media (max-width: 576px) {
-  header {
-    background-position: 45% 50%;
-  }
-
-  .hamburger {
-    max-height: 0px;
-    overflow: hidden;
-    transition: max-height 0.5s ease-in-out;
-  }
-
-  #nav-toggle:checked ~ .hamburger {
-    max-height: 100vh;
-    overflow: hidden;
-  }
-
-  .display-1 {
-    font-size: 4rem;
-  }
-
-  .users .h5 {
-    font-size: 1.1rem;
-  }
-}
-
-/*** Carousel of quotes
-    -------------------------------------- ***/
-
-.bg-violet {
+.purple-bg {
   background-color: #c271ff !important;
 }
 
-/*** Most popular tutorials
-    -------------------------------------- ***/
-
-.video-card {
-  width: 250px;
-}
-
-img.circle-thumb {
-  width: 150px;
-  height: 150px;
-}
-
-img.logo {
-  height: 30px;
-}
-
-img.star {
-  height: 15px;
-  width: 15px;
-}
-
-img.circle-thumb-small {
-  width: 50px;
-  height: 50px;
-}
-
-/*** Free membership
-    ------------------------------------ ***/
-
-.bg-sectionfree {
+.bg-black {
   background-color: #071629;
 }
 
-/*** footer
-    ------------------------------------ ***/
-
-.social > svg {
-  fill: white;
+.purple-text {
+  color: #c271ff !important;
 }
 
-/*** header/hero piece
-    ------------------------------------- ***/
-
-.pricing {
-  background-image: url("images/pic_2.jpg") !important;
-  background-repeat: no-repeat;
-  background-size: cover;
+.sm-text {
+  font-size: 0.8rem;
 }
 
-/*** header/hero piece
-    -------------------------------------- ***/
-
-.courses {
-  background-image: url("images/pic_3.jpg") !important;
-  background-repeat: no-repeat;
-  background-size: cover;
+.md-text {
+  font-size: 1.6rem;
 }
 
-.tcourse {
-  font-size: 32px;
-  font-family: "Coiny" !important;
-  font-weight: 400;
+.nowrap-text {
+  font-size: 10vw;
 }
 
-/*** filters section
-    ------------------------------------- ***/
-
-.search-icon {
-  font-family: "holberton_school-icon";
-  font-size: 15px;
+.coiny-tittle {
+  font-family: "coiny" !important;
+  line-height: 1.4rem;
 }
 
-.search-filter {
-  background-color: #d195ff;
-  border-radius: 3px;
+.star-size {
+  width: 15px;
+  height: 15px;
 }
 
-/*** my loader */
-.loader {
-  border: 10px solid #f3f3f3;
-  border-top: 10px solid #c271ff;
-  border-radius: 50%;
-  width: 80px;
-  height: 80px;
-  animation: spin 2s linear infinite;
-  margin: auto;
+.width-text {
+  width: 200px;
 }
 
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
+.width-btn {
+  width: 150px;
+}
+
+.dropdown-toggle::after {
+  float: right;
+  margin-top: 0.45rem;
+}
+
+.selected {
+  float: left;
+}
+
+[class^="holberton_school-icon-ic"] {
+  color: white !important;
+  font-size: 37px;
+}
+
+.holberton_school-icon-check {
+  font-size: 2rem;
+  color: #82d24f !important;
+}
+
+holberton_school-icon-search_2 {
+  font-size: 20px;
+}
+
+/* carousel
+    ============================= */
+
+.carousel-caption {
+  position: unset;
+  max-width: 730px;
+  margin-right: 6rem;
+  margin-left: 3rem;
+}
+
+.carousel-control-prev-icon {
+  background-image: url(./images/arrow_white_left.png);
+  width: 2rem;
+  height: 6rem;
+}
+
+.carousel-control-next-icon {
+  background-image: url(./images/arrow_white_right.png);
+  width: 2rem;
+  height: 6rem;
+}
+
+.item-inner {
+  padding-left: 5rem;
+}
+
+/* videos
+  ======================================*/
+
+.card-text {
+  max-width: 242px;
+  color: #838a94;
+}
+
+.profile-video {
+  color: #c271ff;
+}
+
+.section-video .carousel-control-prev-icon {
+  background-image: url(./images/arrow_black_left.png);
+  margin-left: -4rem !important;
+}
+
+.section-video .carousel-control-next-icon {
+  background-image: url(./images/arrow_black_right.png);
+  margin-right: -4rem !important;
+}
+
+.card {
+  width: 270px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.play-img {
+  position: absolute;
+  left: 40%;
+  top: 10%;
+}
+
+/* Dynamic carousel*/
+
+#videos .loading,
+#latestVideos .loading {
+  background-color: #c271ff;
+}
+
+@media (max-width: 576px) {
+  #videos.carousel-inner .carousel-item > div,
+  #latestVideos.carousel-inner .carousel-item > div {
+    display: none !important;
   }
-  100% {
-    transform: rotate(360deg);
+  #videos.carousel-inner .carousel-item > div:nth-child(1),
+  #latestVideos.carousel-inner .carousel-item > div:nth-child(1) {
+    display: block !important;
+  }
+  .play-icon {
+    margin: -6.2rem 5.5rem !important;
+  }
+}
+
+#videos.carousel-inner .carousel-item.active,
+#videos.carousel-inner .carousel-item-next,
+#videos.carousel-inner .carousel-item-prev,
+#latestVideos.carousel-inner .carousel-item.active,
+#latestVideos.carousel-inner .carousel-item-next,
+#latestVideos.carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+@media (min-width: 576px) {
+  #videos.carousel-inner .carousel-item-right.active,
+  #videos.carousel-inner .carousel-item-next,
+  #latestVideos.carousel-inner .carousel-item-right.active,
+  #latestVideos.carousel-inner .carousel-item-next {
+    transform: translate(20%);
+  }
+  #videos.carousel-inner .carousel-item-left.active,
+  #videos.carousel-inner .carousel-item-prev,
+  #latestVideos.carousel-inner .carousel-item-left.active,
+  #latestVideos.carousel-inner .carousel-item-prev {
+    transform: translateX(-20%);
+  }
+}
+
+#videos.carousel-inner .carousel-item-right,
+#videos.carousel-inner .carousel-item-left,
+#latestVideos.carousel-inner .carousel-item-right,
+#latestVideos.carousel-inner .carousel-item-left {
+  transform: translateX(0);
+  background-color: white;
+}
+
+/* Filters Section
+    ================================ */
+.bg-search {
+  background-color: #d195ff;
+}
+
+.num-vid {
+  color: gray;
+}
+
+#courses {
+  margin-left: 5rem !important;
+}
+
+@media only screen and (max-width: 575px) {
+  .carousel-item {
+    padding: 0;
+  }
+  .item-inner {
+    padding-left: 0;
+  }
+  .carousel-caption {
+    margin-left: 3.5rem;
+    margin-right: 2.8rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .popular-carousel {
+    width: 18%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .star-size {
+    width: 1.02vw;
   }
 }

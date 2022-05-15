@@ -156,7 +156,7 @@ $(document).ready(function () {
         });
     };
 
-    const serching = () => {
+    const searching = () => {
         $.ajax({
             type: "GET",
             url: "https://smileschool-api.hbtn.info/courses",

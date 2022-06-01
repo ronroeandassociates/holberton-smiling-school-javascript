@@ -1,4 +1,4 @@
-![holberton_smiling_school_banner](https://github.com/ronroeandassociates/assets/blob/master/images/Holberton_smiling_school_banner.png)
+![holberton_smiling_school_javascript_banner](https://github.com/ronroeandassociates/assets/blob/master/images/holberton-smiling-school-javascript_banner.png)
 
 # 0x00. Build a web app in JavaScript
 
